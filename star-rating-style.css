@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+  .star-rating {
+    height: 250px;
+    width: 400px;
+    padding: 20px;
+  }
+  .star-rating div {
+    color: #fcb415;
+    font-size: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  .star-rating input {
+    display: none;
+  }
+  .star-rating input + label {
+    font-size: 36px;
+    cursor: pointer;
+  }
+  .star-rating input:checked + label ~ label {
+    color: #1b1b1b;
+  }
+  .star-rating label:active {
+    transition: 0.3s ease;
+  }

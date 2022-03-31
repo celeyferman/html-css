@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fff;
+  }
+  ul, li {
+    list-style: none;
+  }
+
+  .switch-navigation label {
+    color: #000;
+    background-color: #aaa;
+    display: inline-flex;
+    width: 100px;
+    text-align: center;
+  }
+
+  input {
+    display: none;
+  }
+
+  #header-top {
+    display: none;
+    position: fixed;
+    padding:6px;
+    top:0;
+    background-color: #66ded9;
+    color: #fff;
+    width: 100%;
+  }
+  .header-nav-top {
+    align-content: center;
+  }
+  .header-nav-top li {
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    width:calc(98% / 6);
+  }
+  #header-left {
+    display: none;
+    position: fixed;
+    padding-top: 26px;
+    padding-left: 26px;
+    padding-right: 13px;
+    top: 0;
+    left: 0;
+    background-color: #66ded9;
+    color: #fff;
+    height: 100%;
+  }
+  .header-nav-left li {
+    padding: 5px 0;
+    text-align: right;
+    color: #fff;
+    display: block;
+  }
+  #header-right {
+    display: none;
+    position: fixed;
+    padding-top: 26px;
+    padding-right: 26px;
+    padding-left: 13px;
+    top: 0;
+    right: 0;
+    background-color: #66ded9;
+    color: #fff;
+    height: 100%;
+  }
+  .header-nav-right li {
+    padding: 5px 0;
+    text-align: left;
+    color: #fff;
+    display: block;
+  }
+  #header-drop {
+    display: none;
+    position: fixed;
+    padding-top: 6px;
+    padding-left: 26px;
+    padding-right: 13px;
+    top: 0;
+    left: 0;
+    background-color: #66ded9;
+    color: #fff;
+  }
+  .header-nav-drop li {
+    display: none;
+    padding: 5px 0;
+    text-align: right;
+    color: #fff;
+  }
+  #header-drop:hover .header-nav-drop li {
+    display: block;
+  }
+
+  #top-nav:checked ~ #header-top {
+    display: initial;
+  }
+  #right-nav:checked ~ #header-right {
+    display: initial;
+  }
+  #left-nav:checked ~ #header-left {
+    display: initial;
+  }
+  #drop-down-nav:checked ~ #header-drop {
+    display: initial;
+  }
