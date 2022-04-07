@@ -12,18 +12,20 @@
   .pop-up-text {
     width: 400px;
     padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .pop-up-text div span {
+    display: inline-block;
     color: #3d1b1a;
     font-size: 30px;
-    line-height: 36px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    text-align: center;
     text-transform: uppercase;
     transition: all ease-in-out 0.5s;
   }
   .pop-up-text div span:hover{
     color: #fcb415;
-    font-size: 300%;
+    transform: scale(2);
   }

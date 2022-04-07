@@ -12,53 +12,21 @@
         <label for="top-nav">Top</label>
         <label for="right-nav">Right</label>
         <label for="left-nav">Left</label>
-        <label for="drop-down-nav">Drop-Down</label>
     </section>
     
     <input type="radio" id="top-nav" name="display" value="top-nav" checked>
-    <section id="header-top">
-        <ul class="header-nav-top">
-            <li>Home</li>
-            <li>Main Article</li>
-            <li>Second Article</li>
-            <li>Press</li>
-            <li>Contact</li>
-            <li>Help</li>
-        </ul>
-    </section>
-
     <input type="radio" id="right-nav" name="display" value="">
-    <section id="header-right">
-        <h1>Navigation</h1>
-        <ul class="header-nav-right">
-            <li>Home</li>
-            <li>Main Article</li>
-            <li>Second Article</li>
-            <li>Press</li>
-            <li>Contact</li>
-            <li>Help</li>
-        </ul>
-    </section>
-
     <input type="radio" id="left-nav" name="display" value="">
-    <section id="header-left">
-        <h1>Navigation</h1>
-        <ul class="header-nav-left">
+    <section id="header">
+        <ul class="header-nav">
             <li>Home</li>
-            <li>Main Article</li>
-            <li>Second Article</li>
-            <li>Press</li>
-            <li>Contact</li>
-            <li>Help</li>
-        </ul>
-    </section>
-
-    <input type="radio" id="drop-down-nav" name="display" value="">
-    <section id="header-drop">
-        <h1>Navigation</h1>
-        <ul class="header-nav-drop">
-            <li>Home</li>
-            <li>Main Article</li>
+            <li class="submenu">Main Article
+                <div class="dropdown">
+                    <a>Article 1</a>
+                    <a>Article 2</a>
+                    <a>Article 3</a>
+                </div>
+            </li>
             <li>Second Article</li>
             <li>Press</li>
             <li>Contact</li>

@@ -37,3 +37,18 @@
     display: flex;
     align-items: center;
   }
+  @media(max-width: 960px) {
+    .album-entry {
+      width:48%;
+      height: 48%;
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+  }
+  @media(max-width: 480px) {
+    .album-entry{
+      width:96%;
+      height: 96%;
+      margin: 6px;
+    }
+  }

@@ -42,7 +42,7 @@
     text-align: justify;
     overflow: auto;
     height: calc(91% - 200px);
-    width: 40%;
+    width: calc(40% - 10px);
   }
   .side-article {
     padding: 6px;
@@ -51,7 +51,7 @@
     text-align: justify;
     overflow: auto;
     height: calc(91% - 200px);
-    width: 18%;
+    width: calc(18% - 10px);
 }
   #footer {
     bottom:0;

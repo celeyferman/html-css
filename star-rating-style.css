@@ -9,30 +9,88 @@
     justify-content: center;
     background: #fff;
   }
-  .star-rating {
+  .star-board {
     height: 250px;
     width: 400px;
     padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
-  .star-rating div {
+  .star-board div {
     color: #fcb415;
     font-size: 30px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    padding: 20px 0;
+    padding: 0;
   }
-  .star-rating input {
-    display: none;
+  .star-rating {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    min-height: 60px;
+    padding: 0;
+    border: none;
   }
-  .star-rating input + label {
-    font-size: 36px;
+  .star-rating > input {
+    position: absolute;
+    margin-right: -100%;
+    opacity: 0;
+  }
+  .star-rating > input:checked ~ label {
+    background-position: 0 0;
+  }
+  .star-rating > input:checked + label {
+    background-position: 0 -30px;
+  }
+  .star-rating > input:hover ~ label {
+    background-position: 0 0;
+  }
+  .star-rating > input:hover + label {
+    background-position: 0 -30px;
+  }
+  .star-rating > label {
+    position: relative;
+    display: inline-flex;
+    float: left;
+    width: 30px;
+    height: 30px;
+    font-size: 0.1em;
+    color: transparent;
     cursor: pointer;
+    background-image: url("star-rating-icons.png");
+    background-repeat: no-repeat;
+    background-position: 0 -30px;
   }
-  .star-rating input:checked + label ~ label {
-    color: #1b1b1b;
+  .star-rating > label::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 30px;
+    background-image: url("star-rating-icons.png");
+    background-position: 0 30px;
+    pointer-events: none;
+    opacity: 0;
   }
-  .star-rating label:active {
-    transition: 0.3s ease;
+  .star-rating > label:nth-of-type(5)::before {
+    width: 120px;
+    left: -120px;
+  }
+  .star-rating > label:nth-of-type(4)::before {
+    width: 90px;
+    left: -90px;
+  }
+  .star-rating > label:nth-of-type(3)::before {
+    width: 60px;
+    left: -60px;
+  }
+  .star-rating > label:nth-of-type(2)::before {
+    width: 30px;
+    left: -30px;
+  }
+  .star-rating > label:nth-of-type(1)::before {
+    width: 0px;
+    left: 0px;
   }
