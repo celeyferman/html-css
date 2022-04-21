@@ -86,7 +86,8 @@
   }
   #right-nav:checked ~ #header .header-nav .submenu:hover .dropdown {
     width: 122px;
-    margin-left: -122px;
+    margin-top: -24px;
+    margin-left: -121px;
   }
   #left-nav:checked ~ #header {
     padding-top: 26px;
@@ -110,5 +111,6 @@
   }
   #left-nav:checked ~ #header .header-nav .submenu:hover .dropdown {
     width: 122px;
-    margin-left: 120px;
+    margin-top: -24px;
+    margin-left: 121px;
   }
